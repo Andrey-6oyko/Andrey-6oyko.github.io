@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    font-family: Roboto, serif;
+    background: linear-gradient(100deg, #0A4A4A 0%, #22004E 100%);
+}
+
+/* side bar */
+
+.sidebar_text {
+    background: linear-gradient(280deg, #0A4A4A 0%, #22004E 100%);
+    color: rgb(103, 129, 186);
+}
+
+/* navigation */
+
+.nav-link {
+    color: rgb(89, 199, 162);
+}
+
+.navbar-nav .nav-link.active {
+    color: rgb(27, 142, 104);
+}
+
+.navbar-brand img{
+    width: 2.5em;
+}
+
+.navbar-toggler {
+    background-color: rgb(99, 188, 158);
+}
+
+.slide_text{
+    color: rgb(132, 171, 255);
+    margin: auto auto;
+}
+
+@media(max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
+
+/* product */
+
+.card {
+    background: linear-gradient(280deg, #1a7070 0%, #471588 100%);
+    color: aqua;
+}
+
+.card a {
+    text-decoration: none;
+    color: aqua;
+}
+
+/* help */
+
+.col-lg-12.col-md-12>p {
+    color: aquamarine;
+}
+
+.contact>img{
+    margin-inline: 1em;
+}
+
+/* animation phone */
+
+.phone_animation {
+    animation: phone 2s ease 0s infinite normal forwards;
+}
+
+@keyframes phone {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+/* animation message */
+
+.message_animation {
+    animation: message 2s ease 0s infinite normal forwards;
+}
+
+@keyframes message {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateX(48px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateX(26px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateX(13px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateX(6.5px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateX(4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87%,
+	98% {
+		animation-timing-function: ease-out;
+		transform: translateX(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+
+/* more(contacts) */
+
+footer, .btn-outline-info {
+    background: linear-gradient(180deg, #0A4A4A 0%, #22004E 100%);
+}
+
+.footer_text {
+    color: rgb(132, 171, 255);
+    margin: auto auto;
+}
+
+.media_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.media_links>img {
+    margin-inline: 1em;
+}
